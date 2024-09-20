@@ -4,13 +4,8 @@ import PackageDescription
 
 let package = Package(
     name: "Numerix",
-    platforms: [
-        .macOS(.v14),
-        .iOS(.v16)
-    ],
-    products: [
-        .library(name: "Numerix", targets: ["Numerix"])
-    ],
+    platforms: [.macOS(.v14), .iOS(.v17), .tvOS(.v17), .watchOS(.v10), .visionOS(.v1)],
+    products: [.library(name: "Numerix", targets: ["Numerix"])],
     targets: [
         .target(
             name: "Numerix",
